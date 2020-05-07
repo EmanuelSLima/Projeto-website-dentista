@@ -1,0 +1,483 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Classes auxiliares*/
+html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+/*Classe fundo-topo*/
+.fundo-topo{
+    width: 100%;
+    padding: 20px 0;
+    min-height: 500px;
+    background-image: url('../img/bg_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Classe header*/
+.header{
+    border-bottom: 2px solid silver;
+    padding: 5px 0;
+}
+.header__logo{
+    float: left;
+}
+.header__nav{
+    float: left;
+    padding: 15px 20px 15px 150px;
+}
+.header__nav ul{
+    list-style: none;
+}
+.header__nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.header__nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+ .header__nav .selected{
+    color: #509d87;
+    border-bottom: 4px solid #347563;
+}
+.header__nav a:hover{
+    color: #509d87;
+    border-bottom: 4px solid #347563;
+}
+.header__tel{
+    padding: 15px 0 15px 40px;
+    float: left;
+    color: white;
+    font-weight: normal;
+    font-size: 17px;
+}
+/*Classe header__nav--mobile*/
+.header__nav--mobile {
+    display: none;
+}
+.header__nav--mobile > i{
+    position: relative;
+    float: right;
+    top: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.header__nav--mobile ul{
+    position: absolute;
+    list-style: none;
+    background-color: #6CC5B2;
+    left: 0;
+    top: 100px;
+    width: 100%;
+}
+.header__nav--mobile li{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+}
+.header__nav--mobile a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+/*Classe conteudo*/
+.conteudo{
+    width: 100%;
+    padding: 40px 0;
+}
+.conteudo__form{
+    width: 50%;
+    float: left;
+    padding: 0 20px;
+}
+.conteudo__form h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 35px;
+}
+.conteudo__form p{
+    padding: 20px 0;
+    font-size: 14px;
+    
+}
+.conteudo__form input[name=email]{
+    width: 260px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.conteudo__form button{
+    background-color: #00daaa;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    height: 45px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.conteudo__form span{
+    color: #1a5a48;
+    font-size: 12px;
+}
+.conteudo__img{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.conteudo__img img{
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+/*Classe diferenciais*/
+.diferenciais{
+    padding: 30px 0;
+}
+.diferenciais > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.diferenciais__single{
+    width: 33.3%;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.diferenciais__single h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.span__color{
+    color: #02c89d;
+}
+.diferenciais__single p{
+    font-size: 15px;
+    color: black;
+    font-weight: lighter;
+}
+/*Classe sobre*/
+.sobre{
+    padding: 30px 0;
+    width: 100%;
+}
+.sobre > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobre__img{
+    width: 50%;
+}
+.sobre__img > img{
+    width: 100%;
+}
+.sobre__conteudo{
+    width: 50%;
+    padding: 0 20px;
+}
+.sobre__conteudo h2{
+    font-size: 30px;
+    color: #a9c4b8;
+    margin-top: 20px;
+}
+.sobre__conteudo p{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+/*Classe depoimentos*/
+.depoimentos{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url('../img/bg_02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: italic;
+}
+.depoimentos h2{
+    font-size: 25px;
+    color: #2d2d2d;
+    text-align: center;
+    font-weight: normal;
+    padding: 20px 0;
+}
+.depoimentos p{
+    font-size: 15px;
+    color: #2d2d2d;
+    text-align: center;
+}
+/*Classe estapas*/
+.etapas{
+    padding: 10px 0;
+    width: 100%;
+}
+.etapas__container{
+    width: 50%;
+    margin-top: 30px;
+    float: left;
+}
+.etapas h2{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+.etapas__single img{
+    float: left;
+    max-width: 100%;
+    display: block;
+}
+.etapas__single p{
+    display: block;
+    font-size: 13px;
+    float: left;
+    padding: 110px 10px;
+    color: rgb(158, 154, 154);
+}
+.processo{
+    width: 50%;
+    float: left;
+    padding: 50px 0;
+}
+.processo__single{
+    width: 100%;
+    margin-top: 20px;
+}
+.processo__circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    margin-bottom: 25px;
+    color: rgb(175, 175, 175);
+    margin-right: 20px;
+}
+.processo__description h2{
+    text-align: left;
+    font-size: 20px;
+}
+.processo__description p{
+    text-align: left;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.processo__line{
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 2px;
+}
+/*Classe diferencas*/
+.diferencas{
+    padding: 20px 0;
+    width: 100%;
+}
+.diferencas .container > h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+}
+.diferencas__single{
+    width: 50%;
+    border-right: 1px solid rgb(172, 167, 167);
+    margin-top: 25px;
+    float: left;
+}
+.diferencas__box{
+    float: right;
+    width: 200px;
+    text-align: center;
+}
+.diferencas__box h2{
+    color: rgb(190, 189, 189);
+    padding: 20px 0;
+    font-weight: normal;
+}
+.diferencas__conteudo{
+    padding: 5px 0;
+    position: relative;
+    display: inline-block;
+}
+.diferencas__line{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    z-index: 9;
+    transform: rotate(3deg);
+}
+.diferencas__conteudo span{
+    color: rgb(105, 105, 105);
+    font-size: 17px;
+}
+/*Classe doferencas__single--2*/
+.diferencas__single--2{
+    float: left;
+    padding: 40px 0 20px 45px;
+}
+.diferencas__conteudo--2{
+    padding: 5px 0;
+}
+.diferencas__conteudo--2 > span{
+    color: #02c89d;
+}
+/*Classe contato*/
+.contato{
+    padding: 30px 0;
+    background: #22f0c3;
+    text-align: center;
+}
+.contato > .container{
+    max-width: 700px;
+}
+.contato h2{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+input[name=nome],
+input[name=email],
+input[name=tel]{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid silver;
+    padding-left: 15px;
+    font-weight: 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+input[type=submit]{
+    width: 180px;
+    border: 0;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 0;
+    background-color: #06ad89;
+    color: white;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    outline: none;
+    resize: vertical;
+    border-radius: 15px;
+}
+/*Classe footer*/
+.footer{
+    padding: 20px 0;
+    background-color: #1a5a48;
+    text-align: center;
+}
+
+/*Formatacao para dispositivos mobiles*/
+@media screen and (max-width: 768px){
+    .header__nav{
+        display: none;
+    }
+    .header__tel{
+        display: none;
+    }
+    .conteudo__form{
+        width: 100%;
+        text-align: left;
+    }
+    .conteudo__form input[name=email], button{
+        margin: 15px 0;
+        width: 260px;
+    }
+    .conteudo__img{
+        display: none;
+    }
+    .header__nav--mobile{
+        display: block;
+    }
+    .header__nav--mobile > ul{
+        display: none;
+    }
+    .diferenciais__single{
+        width: 100%;
+        padding: 10px 70px;
+    }
+    .sobre__img{
+        width: 100%;
+    }
+    .sobre__conteudo{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sobre__conteudo h2{
+        margin-top: 30px;
+    }
+    .etapas__container{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .processo{
+        width: 100%;
+    }
+    .diferencas__single{
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .diferencas{
+        text-align: center;
+    }
+    .diferencas__box{
+        float: right;
+        width: 100%;
+        text-align: center;
+    }
+    .diferencas__single--2{
+        width: 100%;
+    }
+    .diferencas__single--2 img{
+        margin-bottom: 20px;
+    }
+    .diferencas__conteudo--2{
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+}
